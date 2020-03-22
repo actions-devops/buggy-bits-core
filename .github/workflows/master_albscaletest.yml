@@ -20,6 +20,9 @@ jobs:
       with:
         dotnet-version: '3.0.103'
 
+    - name: Change Directory to src
+      run: cd src
+
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
